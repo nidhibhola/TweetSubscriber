@@ -1,5 +1,4 @@
-var socket = new WebSocket(
-		"ws://localhost:8080/TweetSubscriber/hashtagtweets");
+var socket = new WebSocket("ws://localhost:8080/TweetSubscriber/hashtagtweets");
 socket.onmessage = onMessage;
 
 function searchHashtag() {
@@ -33,7 +32,7 @@ function generateTable() {
 	columnCount = tweets[0].length;
 
 	// Add the header row.
-	row = table.insertRow(-1);
+	row = table.insertRow(0);
 	for (var i = 0; i < columnCount; i++) {
 		var headerCell = document.createElement("TH");
 		headerCell.innerHTML = tweets[0][i];
@@ -47,7 +46,7 @@ function generateTable() {
 
 function addTableRow(username, text, createdAt) {
 	// Add the data rows
-	row = table.insertRow(-1);
+	row = table.insertRow(1);
 	var cell = row.insertCell(-1);
 	cell.innerHTML = username;
 
