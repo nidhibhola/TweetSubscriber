@@ -1,0 +1,23 @@
+# Ignore all target folders
+*/target
+*/.settings
+*target
+*.settings
+# 
+# Ignore .class files
+*.class
+*.jar
+*.project
+*.prefs
+*.classpath
+*/.idea
+.idea
+*.iml
+*/.iml
+*.checkstyle
+*.log*
+*.dll
+*/obj
+*/bin
+*/debug
+*/packages
