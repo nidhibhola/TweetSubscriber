@@ -1,6 +1,5 @@
 package com.twittertest.websocket;
 
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -29,15 +28,12 @@ public class HashtagWebSocketServer {
 
 	@OnClose
 	public void close(Session session) {
-		try {
-			session.close();
-		} catch (IOException e) {
-			Logger.getLogger(HashtagWebSocketServer.class.getName()).log(Level.SEVERE, null, e);
-		}
+		HashtagStreamHandler.stopStream();
 	}
 
 	@OnError
 	public void onError(Throwable error) {
+		HashtagStreamHandler.stopStream();
 		Logger.getLogger(HashtagWebSocketServer.class.getName()).log(Level.SEVERE, null, error);
 	}
 

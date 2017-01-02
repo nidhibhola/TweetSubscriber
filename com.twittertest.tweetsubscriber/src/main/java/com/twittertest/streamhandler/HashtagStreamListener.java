@@ -59,6 +59,12 @@ public class HashtagStreamListener implements StatusListener {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			try {
+				session.close();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 	}
 
@@ -80,5 +86,11 @@ public class HashtagStreamListener implements StatusListener {
 
 	public void onException(Exception ex) {
 		ex.printStackTrace();
+		try {
+			session.close();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 	}
 }

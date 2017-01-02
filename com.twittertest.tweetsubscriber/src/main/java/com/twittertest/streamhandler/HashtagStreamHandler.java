@@ -67,4 +67,9 @@ public final class HashtagStreamHandler {
 		String[] trackArray = { hashtagString };
 		twitterStream.filter(new FilterQuery(0, null, trackArray));
 	}
+
+	public static void stopStream() {
+		hashtagString = null;
+		twitterStream.clearListeners();
+	}
 }
