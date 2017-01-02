@@ -7,9 +7,11 @@
 </head>
 <body>
 	<div align="center">
-		<input type="text" name="hashtag" id="hashtag"> 
-		<input type="submit" value="Submit" onclick="searchHashtag()">
+		<div>
+			<input type="text" name="hashtag" id="hashtag"> <input
+				type="submit" value="Subscribe" onclick="searchHashtag()">
+		</div>
+		<div id="content"></div>
 	</div>
-	<div id="content"></div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 var socket = new WebSocket(
-		"ws://localhost:8080/com.twittertest.restapi/hashtagtweets");
+		"ws://localhost:8080/TweetSubscriber/hashtagtweets");
 socket.onmessage = onMessage;
 
 function searchHashtag() {
