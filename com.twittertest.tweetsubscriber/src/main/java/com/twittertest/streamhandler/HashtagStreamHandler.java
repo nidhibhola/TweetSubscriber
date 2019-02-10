@@ -16,10 +16,10 @@ import twitter4j.auth.AccessToken;
  */
 public final class HashtagStreamHandler {
 
-	private final static String CONSUMER_KEY = "aCtB3k8TVziCXI67V2GLCULan";
-	private final static String CONSUMER_KEY_SECRET = "mqnIxPl54sHXh30lR54O2UDz1TZVPO5GNIvK58BPYTV2VTm75B";
-	private final static String ACCESS_TOKEN = "815078418035273728-kZEJ41R5OyblNmiTcsKGKPOIybDnCui";
-	private final static String ACCESS_TOKEN_SECRET = "iUorqYeK7dPGY17byatlefBErtSUEoYaBJbtCTtTyoie8";
+	private final static String CONSUMER_KEY = ""; //Add your consumer key
+	private final static String CONSUMER_KEY_SECRET = ""; //Add your consumer key secret
+	private final static String ACCESS_TOKEN = ""; //Add your access token
+	private final static String ACCESS_TOKEN_SECRET = ""; // //Add your access token secret
 
 	// twitter stream
 	private static TwitterStream twitterStream;
